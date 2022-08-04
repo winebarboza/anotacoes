@@ -16,7 +16,7 @@ body{
     background-color: var(--vermelho_Claro);
 }
 header{
-    padding-top: 3%;
+    padding-top: 1%;
     width: 100%;
     height: 3rem;
     background-color: var(--vermelho);
@@ -75,3 +75,42 @@ button{
     position: absolute;
     z-index: 1;
 }
+/* ===== input dinâmico e estilizado =====*/
+#input-task{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5px;
+}
+#input-task input{
+    display: flex;
+    margin-top: 2px;
+    padding-left: 10px;
+    border: none;
+    border-radius: 5px;
+    width: 17.4em;
+    height: 4em;
+    background-color: var(--branco_Gelo);
+}
+#input-task input:focus{
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.esconder{
+    display: none; /* escondendo botão "adicionar tasks"*/
+} 
+.mostrar{
+    visibility: visible;
+    z-index:2;
+    position: absolute;
+    background-color: var(--branco_Gelo);
+}
+.mostrar img{
+    width: 20px;
+}
+#botaoEnviar{
+    visibility: hidden;
+}
+/* ============================= */
+
+/* ===== ===== */
